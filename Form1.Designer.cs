@@ -30,6 +30,7 @@
         {
             dgvDati = new DataGridView();
             btnElencoPiloti = new Button();
+            btnElencoGare = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvDati).BeginInit();
             SuspendLayout();
             // 
@@ -51,11 +52,22 @@
             btnElencoPiloti.UseVisualStyleBackColor = true;
             btnElencoPiloti.Click += btnElencoPiloti_Click_1;
             // 
+            // btnElencoGare
+            // 
+            btnElencoGare.Location = new Point(405, 49);
+            btnElencoGare.Name = "btnElencoGare";
+            btnElencoGare.Size = new Size(129, 60);
+            btnElencoGare.TabIndex = 2;
+            btnElencoGare.Text = "Elenco gare";
+            btnElencoGare.UseVisualStyleBackColor = true;
+            btnElencoGare.Click += btnElencoGare_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnElencoGare);
             Controls.Add(btnElencoPiloti);
             Controls.Add(dgvDati);
             Name = "Form1";
@@ -68,5 +80,6 @@
 
         private DataGridView dgvDati;
         private Button btnElencoPiloti;
+        private Button btnElencoGare;
     }
 }
