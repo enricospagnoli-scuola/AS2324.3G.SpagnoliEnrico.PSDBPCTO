@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            dgvDati = new DataGridView();
+            btnElencoPiloti = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvDati).BeginInit();
+            SuspendLayout();
+            // 
+            // dgvDati
+            // 
+            dgvDati.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDati.Location = new Point(12, 201);
+            dgvDati.Name = "dgvDati";
+            dgvDati.Size = new Size(776, 237);
+            dgvDati.TabIndex = 0;
+            // 
+            // btnElencoPiloti
+            // 
+            btnElencoPiloti.Location = new Point(270, 49);
+            btnElencoPiloti.Name = "btnElencoPiloti";
+            btnElencoPiloti.Size = new Size(129, 60);
+            btnElencoPiloti.TabIndex = 1;
+            btnElencoPiloti.Text = "Elenco piloti";
+            btnElencoPiloti.UseVisualStyleBackColor = true;
+            btnElencoPiloti.Click += btnElencoPiloti_Click_1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnElencoPiloti);
+            Controls.Add(dgvDati);
+            Name = "Form1";
+            Text = "Spagnoli Enrico, 10/05/2024, verifica PSDBPCTO";
+            ((System.ComponentModel.ISupportInitialize)dgvDati).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dgvDati;
+        private Button btnElencoPiloti;
     }
 }
